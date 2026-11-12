@@ -1,7 +1,112 @@
+@font-face {
+    font-family: "Streamline Modern";
+    src: url("streamline-modern-demo.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Angelic Serif";
+    src: url("Angelic Serif.ttf") format("truetype");
+}
+
+
 body {
     margin: 0;
-    background-color: black;
     color: white;
     font-family: Arial, sans-serif;
-    text-align: left;
+    text-align: center;
+
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+
+hr {
+    width: 90%;
+    border: none;
+    border-top: 2px solid white;
+    margin: 20px auto;
+}
+
+
+h1 {
+    font-family: "Streamline Modern", serif;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+    margin: 30px 0;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+
+button {
+    font-family: "Angelic Serif", serif;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 30px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+.about {
+    width: 70%;
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+    font-family: "Streamline Modern", serif;
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+
+    font-family: "Angelic Serif", serif;
+    font-size: 24px;
+
+    color: white;
+    border: 2px solid white;
+    text-decoration: none;
+
+    transition: transform 0.2s ease;
+}
+
+.back-button:hover {
+    transform: scale(1.05);
 }
